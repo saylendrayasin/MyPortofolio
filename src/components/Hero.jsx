@@ -15,8 +15,8 @@ function hero() {
             </h1>
             <h2 className="font-medium text-slate-900 text-lg mb-5 lg:text-2xl">
               Students |
-              <span className="text-teal-900 lg:text-2xl">Programmer</span> |
-              <span className="text-dark lg:text-2xl">Data Analysis</span>
+              <span className="text-teal-900 lg:text-2xl"> Programmer</span> |
+              <span className="text-dark lg:text-2xl"> Data Analysis</span>
             </h2>
             <p className="font-medium text-second mb-10 leading-relaxed">
               I'm Saylendra Yasin student of Universitas Klabat with majority
@@ -35,7 +35,7 @@ function hero() {
               <img
                 src={saylendra}
                 alt="Saylendra Yasin"
-                className="max-w-full mx-auto"
+                className="max-w-full mx-auto rounded-md"
               />
               <span className="absolute bottom-40 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
                 <svg
