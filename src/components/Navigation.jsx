@@ -12,7 +12,9 @@ function Navigation() {
       setNavbar(false);
     }
   };
+
   window.addEventListener("scroll", changeBackground);
+
   return (
     <header
       className={
@@ -47,6 +49,49 @@ function Navigation() {
               <span className="hamburger-line transition duration-300 ease-in-out"></span>
               <span className="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
             </button>
+            <nav
+              id="nav-menu"
+              className={
+                isActivated
+                  ? "block absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full"
+                  : "hidden"
+              }
+            >
+              <ul className="block">
+                <li className="group">
+                  <a
+                    href="#home"
+                    className="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li className="group">
+                  <a
+                    href="#about"
+                    className="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                  >
+                    About Me
+                  </a>
+                </li>
+                <li className="group">
+                  <a
+                    href="#portfolio"
+                    className="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                  >
+                    Portfolio
+                  </a>
+                </li>
+                <li className="group">
+                  <a
+                    href="#contact"
+                    className="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                  >
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
