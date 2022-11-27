@@ -2,7 +2,7 @@ import React from "react";
 
 function Portofolio() {
   return (
-    <section id="portofolio" className="pt-36 pb-32 bg-slate-100">
+    <section id="portfolio" className="pt-36 pb-32 bg-slate-100">
       <div className="container">
         <div className="w-full px-4">
           <div className="max-w-xl mx-auto text-center mb-16">
@@ -17,7 +17,8 @@ function Portofolio() {
             </p>
           </div>
         </div>
-        <div className="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto ">
+        {/* Ukuran Gambar 600 x 320 */}
+        <div className="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
           <div className="mb-12 p-4 md:1/2">
             <div className="rounded-md shadow-md overflow-hidden">
               <img src="#" alt="Project 1" width="w-full" />

@@ -25,7 +25,7 @@ function hero() {
 
             <a
               href="home"
-              className="text-base font-semibold text-white bg-blue-900 py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+              className="text-base font-semibold text-white bg-dark py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
             >
               Contact Me
             </a>
