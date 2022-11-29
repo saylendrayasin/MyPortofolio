@@ -2,31 +2,30 @@ import React from "react";
 
 function About() {
   return (
-    <section id="about" className="pt-36 pb-32">
+    <section id="about" className="pt-36 pb-32 dark:bg-darkMode">
       <div className="container">
         <div className="flex flex-wrap">
-          <div className="w-full px-4 mb-10 lg:w-1/2">
-            <h3 className="font-bold uppercase text-primary text-lg mb-3">
+          <div className="mb-12 w-full px-4 lg:w-1/2">
+            <h3 className="mb-3 text-lg font-bold uppercase text-primary dark:text-white">
               About Me
             </h3>
-            <h2 className="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">
-              Come on with me
+            <h2 className="mb-5 max-w-md text-3xl font-bold text-dark dark:text-white lg:text-4xl">
+              Talk about me
             </h2>
-            <p className="font-medium text-base text-second max-w-xl lg:text-lg">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+            <p className="max-w-xl text-base font-medium text-second dark:text-white lg:text-lg">
+              I am a student at Klabat University who is interested in
+              programming and studying Javascript, Java, Python. I'm currently
+              learning ReactJS, React Native, Tailwind CSS, Bootstrap. I am also
+              interested in data science for data visualization.
             </p>
           </div>
           <div className="w-full px-4 lg:w-1/2">
-            <h3 className="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">
+            <h3 className="mb-4 text-2xl font-semibold text-dark dark:text-white lg:pt-10 lg:text-3xl">
               Follow Me
             </h3>
-            <p className="font-medium text-base text-second mb-6 lg:text-lg">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since
+            <p className="mb-6 text-base font-medium text-second dark:text-white lg:text-lg">
+              If you want to communicate or share solutions with me please click
+              the icon below to connect with me
             </p>
             <div className="flex items-center">
               {/* Instagram */}
@@ -34,7 +33,7 @@ function About() {
                 href="https://www.instagram.com/saylendrayasin/"
                 rel="noreferrer"
                 target="_blank"
-                className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-400 border-slate-400 hover:border-primary hover:bg-primary hover:text-white"
+                className="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-400 text-slate-400 hover:border-primary hover:bg-primary hover:text-white"
               >
                 <svg
                   role="img"
@@ -53,7 +52,7 @@ function About() {
                 href="https://twitter.com/saylendra_yasin"
                 rel="noreferrer"
                 target="_blank"
-                className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-400 border-slate-400 hover:border-primary hover:bg-primary hover:text-white"
+                className="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-400 text-slate-400 hover:border-primary hover:bg-primary hover:text-white"
               >
                 <svg
                   role="img"
@@ -72,7 +71,7 @@ function About() {
                 href="https://github.com/saylendrayasin"
                 rel="noreferrer"
                 target="_blank"
-                className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-400 border-slate-400 hover:border-primary hover:bg-primary hover:text-white"
+                className="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-400 text-slate-400 hover:border-primary hover:bg-primary hover:text-white"
               >
                 <svg
                   role="img"

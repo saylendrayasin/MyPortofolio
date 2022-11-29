@@ -5,20 +5,20 @@ function Footer() {
     <footer className="bg-slate-900 pt-24 pb-12">
       <div className="container">
         <div className="flex flex-wrap">
-          <div className="w-full px-4 mb-12 font-medium md:w-1/3">
-            <h2 className="font-bold text-3xl text-slate-200 mb-5">
+          <div className="mb-12 w-full px-4 font-medium md:w-1/3">
+            <h2 className="mb-5 text-2xl font-bold text-slate-200">
               @saylendrayasin
             </h2>
           </div>
-          <div className="w-full px-4 mb-12 md:w-1/3">
-            <h3 className="font-semibold text-xl text-slate-200 mb-5">
+          <div className="mb-12 w-full px-4 md:w-1/3">
+            <h3 className="mb-5 text-xl font-semibold text-slate-200">
               Category
             </h3>
             <ul className="text-slate-300">
               <li>
                 <a
                   href="https"
-                  className="inline-block text-base hover:text-primary mb-3"
+                  className="mb-3 inline-block text-base hover:text-primary"
                 >
                   Programming
                 </a>
@@ -26,7 +26,7 @@ function Footer() {
               <li>
                 <a
                   href="https"
-                  className="inline-block text-base hover:text-primary mb-3"
+                  className="mb-3 inline-block text-base hover:text-primary"
                 >
                   Technology
                 </a>
@@ -34,20 +34,20 @@ function Footer() {
               <li>
                 <a
                   href="https"
-                  className="inline-block text-base hover:text-primary mb-3"
+                  className="mb-3 inline-block text-base hover:text-primary"
                 >
                   Lifestyle
                 </a>
               </li>
             </ul>
           </div>
-          <div className="w-full px-4 mb-12 md:w-1/3">
-            <h3 className="font-semibold text-xl text-slate-200 mb-5">Link</h3>
+          <div className="mb-12 w-full px-4 md:w-1/3">
+            <h3 className="mb-5 text-xl font-semibold text-slate-200">Link</h3>
             <ul className="text-slate-300">
               <li>
                 <a
                   href="#home"
-                  className="inline-block text-base hover:text-primary mb-3"
+                  className="mb-3 inline-block text-base hover:text-primary"
                 >
                   Home
                 </a>
@@ -55,7 +55,7 @@ function Footer() {
               <li>
                 <a
                   href="#about"
-                  className="inline-block text-base hover:text-primary mb-3"
+                  className="mb-3 inline-block text-base hover:text-primary"
                 >
                   About Me
                 </a>
@@ -63,7 +63,7 @@ function Footer() {
               <li>
                 <a
                   href="#portfolio"
-                  className="inline-block text-base hover:text-primary mb-3"
+                  className="mb-3 inline-block text-base hover:text-primary"
                 >
                   Portfolio
                 </a>
@@ -71,7 +71,7 @@ function Footer() {
               <li>
                 <a
                   href="#contact"
-                  className="inline-block text-base hover:text-primary mb-3"
+                  className="mb-3 inline-block text-base hover:text-primary"
                 >
                   Contact
                 </a>
@@ -79,14 +79,14 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <div className="w-full pt-10 border-t border-slate-700">
-          <div className="flex items-center justify-center mb-5">
+        <div className="w-full border-t border-slate-700 pt-10">
+          <div className="mb-5 flex items-center justify-center">
             {/* Instagram */}
             <a
               href="https://www.instagram.com/saylendrayasin/"
               rel="noreferrer"
               target="_blank"
-              className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-400 border-slate-400 hover:border-primary hover:bg-primary hover:text-white"
+              className="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-400 text-slate-400 hover:border-primary hover:bg-primary hover:text-white"
             >
               <svg
                 role="img"
@@ -105,7 +105,7 @@ function Footer() {
               href="https://twitter.com/saylendra_yasin"
               rel="noreferrer"
               target="_blank"
-              className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-400 border-slate-400 hover:border-primary hover:bg-primary hover:text-white"
+              className="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-400 text-slate-400 hover:border-primary hover:bg-primary hover:text-white"
             >
               <svg
                 role="img"
@@ -124,7 +124,7 @@ function Footer() {
               href="https://github.com/saylendrayasin"
               rel="noreferrer"
               target="_blank"
-              className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-400 border-slate-400 hover:border-primary hover:bg-primary hover:text-white"
+              className="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-400 text-slate-400 hover:border-primary hover:bg-primary hover:text-white"
             >
               <svg
                 role="img"
@@ -138,7 +138,7 @@ function Footer() {
               </svg>
             </a>
           </div>
-          <p className="font-medium text-sm text-slate-500 text-center">
+          <p className="text-center text-sm font-medium text-slate-500">
             Made with ❤️ by{" "}
             <a
               href="https://www.instagram.com/saylendrayasin/"

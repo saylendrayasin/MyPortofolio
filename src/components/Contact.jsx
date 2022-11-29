@@ -2,15 +2,17 @@ import React from "react";
 
 function Contact() {
   return (
-    <section id="contact" className="pt-36 pb-32">
+    <section id="contact" className="pt-36 pb-32 dark:bg-darkMode">
       <div className="container">
         <div className="w-full px-4">
-          <div className="max-w-xl mx-auto text-center mb-16">
-            <h4 className="font-semibold text-lg text-primary mb-2">Contact</h4>
-            <h2 className="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">
+          <div className="mx-auto mb-16 max-w-xl text-center">
+            <h4 className="mb-2 text-lg font-semibold text-primary dark:text-white">
+              Contact
+            </h4>
+            <h2 className="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">
               Contact Me
             </h2>
-            <p className="font-medium text-md text-second md:text-lg">
+            <p className="text-md font-medium text-second dark:text-white md:text-lg">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
             </p>
@@ -18,8 +20,8 @@ function Contact() {
         </div>
 
         <form>
-          <div className="w-full lg:w-2/3 lg:mx-auto">
-            <div className="w-full px-4 mb-8">
+          <div className="w-full lg:mx-auto lg:w-2/3">
+            <div className="mb-8 w-full px-4">
               <label
                 htmlFor="name"
                 className="text-base font-bold text-primary"
@@ -29,10 +31,10 @@ function Contact() {
               <input
                 type="text"
                 id="name"
-                className="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-1 focus:ring-primary focus:ring-opacity-50 focus:border-primary"
+                className="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary focus:ring-opacity-50"
               />
             </div>
-            <div className="w-full px-4 mb-8">
+            <div className="mb-8 w-full px-4">
               <label
                 htmlFor="email"
                 className="text-base font-bold text-primary"
@@ -42,10 +44,10 @@ function Contact() {
               <input
                 type="email"
                 id="email"
-                className="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-1 focus:ring-primary focus:ring-opacity-50 focus:border-primary"
+                className="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary focus:ring-opacity-50"
               />
             </div>
-            <div className="w-full px-4 mb-8">
+            <div className="mb-8 w-full px-4">
               <label
                 htmlFor="message"
                 className="text-base font-bold text-primary"
@@ -55,11 +57,11 @@ function Contact() {
               <textarea
                 type="text"
                 id="message"
-                className="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-1 focus:ring-primary focus:ring-opacity-50 focus:border-primary h-32"
+                className="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary focus:ring-opacity-50"
               ></textarea>
             </div>
             <div className="w-full px-4">
-              <button className="text-base font-semibold text-white bg-dark py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">
+              <button className="w-full rounded-full bg-dark py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg">
                 Send
               </button>
             </div>
