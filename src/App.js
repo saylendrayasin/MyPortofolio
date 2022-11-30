@@ -5,6 +5,9 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Portofolio from "./components/Portofolio";
 import { BsFillMoonStarsFill, BsSun } from "react-icons/bs";
+import BackToTop from "./components/BackToTop";
+import logo from "./images/logos.svg";
+import logodark from "./images/logodark.svg";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -34,9 +37,13 @@ function App() {
             <div className="px-4 dark:text-white">
               <a
                 href="#home"
-                className="block py-6 text-lg font-bold text-primary  "
+                className="block items-center text-lg font-bold text-primary"
               >
-                saylendrayasin
+                <img
+                  src={`${darkMode ? logo : logodark}`}
+                  alt="saylendrayasin"
+                  className="w-14 items-center "
+                />
               </a>
             </div>
             <div className="flex items-center px-4 ">
@@ -118,6 +125,7 @@ function App() {
       <Portofolio />
       <Contact />
       <Footer />
+      <BackToTop />
     </div>
   );
 }
