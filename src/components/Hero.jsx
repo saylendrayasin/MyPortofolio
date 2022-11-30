@@ -2,7 +2,6 @@ import React from "react";
 import saylendra from "../images/saylendra.png";
 
 function hero(props) {
-  console.log(props.dark);
   return (
     <section id="home" className="pt-36 dark:bg-darkMode">
       <div className="container ">

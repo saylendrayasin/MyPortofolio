@@ -1,6 +1,43 @@
 import React from "react";
+import { useState } from "react";
+import { send } from "emailjs-com";
 
 function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleName = (e) => {
+    setName(e.target.value);
+  };
+
+  const handleEmail = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleMessage = (e) => {
+    setMessage(e.target.value);
+  };
+
+  const sendMail = (e) => {
+    e.preventDefault();
+    send(
+      "service_d1q4rc2",
+      "template_28mzq54",
+      { name, email, message },
+      "a4VdtKUiqcIJ19Mmr"
+    )
+      .then((res) => {
+        console.log("Message sent successfully", res.status, res.text);
+      })
+      .catch((err) => {
+        console.log("Message failed to send", err);
+      });
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
+
   return (
     <section id="contact" className="pt-36 pb-32 dark:bg-darkMode">
       <div className="container">
@@ -13,13 +50,13 @@ function Contact() {
               Contact Me
             </h2>
             <p className="text-md font-medium text-second dark:text-white md:text-lg">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
+              If you want to communicate with me or want to send me a message,
+              please fill out the form below.
             </p>
           </div>
         </div>
 
-        <form>
+        <form onSubmit={sendMail}>
           <div className="w-full lg:mx-auto lg:w-2/3">
             <div className="mb-8 w-full px-4">
               <label
@@ -30,6 +67,10 @@ function Contact() {
               </label>
               <input
                 type="text"
+                required
+                placeholder="Please enter yout name"
+                value={name}
+                onChange={handleName}
                 id="name"
                 className="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary focus:ring-opacity-50"
               />
@@ -43,6 +84,10 @@ function Contact() {
               </label>
               <input
                 type="email"
+                required
+                placeholder="Please enter your email"
+                value={email}
+                onChange={handleEmail}
                 id="email"
                 className="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary focus:ring-opacity-50"
               />
@@ -56,6 +101,10 @@ function Contact() {
               </label>
               <textarea
                 type="text"
+                required
+                placeholder="Please enter your message"
+                value={message}
+                onChange={handleMessage}
                 id="message"
                 className="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary focus:ring-opacity-50"
               ></textarea>

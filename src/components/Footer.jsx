@@ -17,7 +17,9 @@ function Footer() {
             <ul className="text-slate-300">
               <li>
                 <a
-                  href="https"
+                  href="https://www.kompas.com/tag/coding"
+                  rel="noreferrer"
+                  target="_blank"
                   className="mb-3 inline-block text-base hover:text-primary"
                 >
                   Programming
@@ -25,7 +27,9 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href="https"
+                  href="https://www.kompas.com/tag/teknologi"
+                  rel="noreferrer"
+                  target="_blank"
                   className="mb-3 inline-block text-base hover:text-primary"
                 >
                   Technology
@@ -33,7 +37,9 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href="https"
+                  href="https://www.kompas.com/tag/gaya+hidup"
+                  rel="noreferrer"
+                  target="_blank"
                   className="mb-3 inline-block text-base hover:text-primary"
                 >
                   Lifestyle
