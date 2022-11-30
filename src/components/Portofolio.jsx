@@ -8,7 +8,7 @@ function Portofolio() {
   return (
     <section
       id="portfolio"
-      className="bg-slate-100 pt-36 pb-32 dark:bg-darkMode"
+      className="bg-slate-100 pt-36 pb-32 dark:bg-semidark"
     >
       <div className="container">
         <div className="w-full px-4">

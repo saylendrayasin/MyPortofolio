@@ -13,6 +13,7 @@ module.exports = {
         second: "#64748b",
         dark: "#0c4a6e",
         darkMode: "#0f172a",
+        semidark: "#121B30",
       },
       screens: {
         // "2xl": "1420px",
